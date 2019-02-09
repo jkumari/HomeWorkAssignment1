@@ -19,7 +19,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this profile -->
     <link href="css/modern-business.css" rel="stylesheet">
-    <!-- Font Awesome's Free CDN is the quickest and easiest way to get Font Awesome on your website, need to add  below as link to use Font Awesome -->
+    <!--Font Awesome's Free CDN is the quickest and easiest way to get Font Awesome on your website, need to add  below as link to use Font Awesome 
+        Added to include the social-icon.
+    -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
@@ -52,16 +54,34 @@
         </div>
       </div>
     </nav>
-
+  <!--  Page Heading starts here 
+  -->
   <header>
+    <!-- Bootstrap Carousel:A slideshow component for cycling through elements—images or slides of text—like a carousel
+        Slides only: a carousel with slides only, use carouselExampleIndicators.
+        The class="carousel slide" specifies that this <div> contains a carousel slide.
+        The data-ride="carousel" attribute tells Bootstrap to begin animating the carousel immediately when the page loads.
+    -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <!--  Indicators:
+            The indicators are the little dots at the bottom of each slide (which indicates how many slides there are in the carousel, 
+            and which slide the user is currently viewing).The indicators are specified in an ordered list with class .carousel-indicators.
+            The data-slide-to: attribute specifies which slide to go to, when clicking on the specific dot.
+            The .active class: needs to be added to one of the slides. Otherwise, the carousel will not be visible.
+          -->
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#car.ouselExampleIndicators" data-slide-to="2"></li>
       </ol>
+      <!--  Wrapper for slides 
+            The "Wrapper for slides" part: The slides are specified in a <div> with class .carousel-inner.
+      -->
       <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
+        <!--  Slide One - Set the background image for this slide in the line below 
+              The content of each slide is defined in a <div> with class .item. This can be text or images.
+              The .active class needs to be added to one of the slides. Otherwise, the carousel will not be visible.
+        -->
         <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('https://previews.123rf.com/images/paolo77/paolo771302/paolo77130200028/17758061-blank-sheet-of-light-ocean-blue-paper-useful-as-a-background.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h3>“Writing the first 90 percent of a computer program takes 90 percent of the time. The remaining ten percent also takes 90 percent of the time and the final touches also take 90 percent of the time.” </h3>
@@ -70,6 +90,7 @@
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/tzO9bxL/abstract-light-effects-over-golden-brown-background_4ydgb-hwg__F0000.png')">
+          <!-- Add Captions to Slides:Add <div class="carousel-caption"> within each <div class="item"> to create a caption for each slide: -->
           <div class="carousel-caption d-none d-md-block">
             <h3>"One man’s crappy software is another man’s full time job."</h3>
             <p> – Jessica Gaston</p>
@@ -83,6 +104,10 @@
           </div>
         </div>
       </div>
+      <!--  The "Left and right controls" part:
+            This code adds "left" and "right" buttons that allows the user to go back and forth between the slides manually.
+            The data-slide attribute accepts the keywords "prev" or "next", which alters the slide position relative to its current position. 
+      -->
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -92,7 +117,9 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <!-- End of heading -->
   </header>
+  <!--  -->
   <div class="jumbotron">
     <h1 class="display-1">Hello, User!</h1>
     <p class="lead">Welcome to my Home Page!</p>
