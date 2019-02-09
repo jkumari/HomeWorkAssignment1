@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <!-- 1.A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
-       2.The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
-       3.The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
-       4.For responsive websites to be compatible with Safari in Split View, Apple recommends the addition of "shrink-to-fit=no" to the viewport meta tag -->
-  <meta name="  " content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <!-- 1.A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+    2.The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    3.The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+    4.For responsive websites to be compatible with Safari in Split View, Apple recommends the addition of "shrink-to-fit=no" to the viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- A meta description is an attribute within your meta tags that helps describe your page. This snippet of text may appear in the search engine results under your headline, though sometimes, search engines will pull a snippet of text from the main body copy of the page instead -->
+    <meta name="description" content="Profile Page of Jyoti Kumari">
+    <!-- Meta tag to mention the authod of the code -->
+    <meta name="author" content="Jyoti Kumari">
+    <!-- Title of the home page -->
+    <title> MY Portfolio</title>
+    <!-- Bootstrap core CSS , downloaded to local-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this profile -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Font Awesome's Free CDN is the quickest and easiest way to get Font Awesome on your website, need to add  below as link to use Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
 
-  <title> MY Portfolio</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/modern-business.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Jyoti Kumari</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-con trols="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+  <body>
+  <!-- Navigation Bar starts here-->
+  <!--1.Navbars come with built-in support for a handful of sub-components
+      2.fixed-top: Position an element at the top of the viewport, from edge to edge. 
+      3.navbar-expand-lg: A standard navigation bar is created with the .navbar class, followed by a responsive collapsing class: .navbar-expand-xl|lg|md|sm (stacks the navbar vertically on extra large, large, medium or small screens)
+      4.navbar-dark: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a black text color.
+      5.bg-dark: Makes the background dark
+  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Jyoti Kumari</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-con trols="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Me</a>
-          </li>
-          <li class="nav-item">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#car.
-        ouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#car.ouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
@@ -96,7 +98,7 @@
     <p class="lead">Welcome to my Home Page!</p>
     <hr class="my-4">
   </div>
- 
+  
   <div class="social-icons">
     <a href="#">
       <i class="fab fa-linkedin-in"></i>
@@ -110,23 +112,21 @@
     <a href="#">
       <i class="fab fa-facebook-f"></i>
     </a>
-</div>
+  </div>
 
-
-
-   <!-- Footer -->
-   <footer class="py-0 bg-dark">
+  <!-- Footer -->
+  <footer class="py-0 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy;</p>
     </div>
-    <!-- /.container -->
+  <!-- /.container -->
   </footer>
 
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-</body>
+  </body>
 
 </html>
