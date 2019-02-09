@@ -1,0 +1,87 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+ 
+ body {
+  padding-top: 56px;
+  font-family: "Times New Roman", Times, serif;
+}
+.row{
+  width: 960px;
+  background-color: lightgray;
+}
+
+h3{
+  color: black;
+  font-weight: bold;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+a:active, a:focus, a:hover {
+  color: #824027;
+}
+
+
+.col-md-3{
+
+    position: relative;
+}
+.col-md-3 span {
+  position: absolute;
+  font-size: 20px;
+  background-color: burlywood;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ .fa, .fab, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+} 
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #adc7e2;
+  color: rgb(18, 27, 78)!important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+
+.carousel-item {
+  height: 20vh;
+  min-height: 200px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* 
+.carousel-item {
+  height: 50%;
+  min-height: 200px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
