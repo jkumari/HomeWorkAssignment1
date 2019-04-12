@@ -1,130 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <!-- 1.A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+  <meta charset="utf-8">
+  <!-- 1.A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
         2.The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
         3.The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
         4.For responsive websites to be compatible with Safari in Split View, Apple recommends the addition of "shrink-to-fit=no" to the viewport meta tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- A meta description is an attribute within your meta tags that helps describe your page. This snippet of text may appear in the search engine results under your headline, though sometimes, search engines will pull a snippet of text from the main body copy of the page instead -->
-        <meta name="description" content="Profile Page of Jyoti Kumari">
-        <!-- Meta tag to mention the authod of the code -->
-        <meta name="author" content="Jyoti Kumari">
-        <!-- Title of the home page -->
-        <title> MY Portfolio</title>
-        <!-- Bootstrap core CSS , downloaded to local-->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom styles for this profile -->
-        <link href="css/modern-business.css" rel="stylesheet">
-        <!--Font Awesome's Free CDN is the quickest and easiest way to get Font Awesome on your website, need to add  below as link to use Font Awesome 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- A meta description is an attribute within your meta tags that helps describe your page. This snippet of text may appear in the search engine results under your headline, though sometimes, search engines will pull a snippet of text from the main body copy of the page instead -->
+  <meta name="description" content="Profile Page of Jyoti Kumari">
+  <!-- Meta tag to mention the authod of the code -->
+  <meta name="author" content="Jyoti Kumari">
+  <!-- Title of the home page -->
+  <title> MY Portfolio</title>
+  <!-- Bootstrap core CSS , downloaded to local-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this profile -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <!--Font Awesome's Free CDN is the quickest and easiest way to get Font Awesome on your website, need to add  below as link to use Font Awesome 
             Added to include the social-icon.
         -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      </head>
-    
-      <body>
-      <!-- Navigation Bar starts here-->
-      <!--1.Navbars come with built-in support for a handful of sub-components
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigation Bar starts here-->
+  <!--1.Navbars come with built-in support for a handful of sub-components
           2.fixed-top: Position an element at the top of the viewport, from edge to edge. 
           3.navbar-expand-lg: A standard navigation bar is created with the .navbar class, followed by a responsive collapsing class: .navbar-expand-xl|lg|md|sm (stacks the navbar vertically on extra large, large, medium or small screens)
           4.navbar-dark: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a black text color.
           5.bg-dark: Makes the background dark
       -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">Jyoti Kumari</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-con trols="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      <!--  Page Heading starts here 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Jyoti Kumari</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-con trols="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  Page Heading starts here 
       -->
-      <header>
-        <!-- Bootstrap Carousel:A slideshow component for cycling through elements—images or slides of text—like a carousel
+  <header>
+    <!-- Bootstrap Carousel:A slideshow component for cycling through elements—images or slides of text—like a carousel
             Slides only: a carousel with slides only, use carouselExampleIndicators.
             The class="carousel slide" specifies that this <div> contains a carousel slide.
             The data-ride="carousel" attribute tells Bootstrap to begin animating the carousel immediately when the page loads.
         -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <!--  Indicators:
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <!--  Indicators:
                 The indicators are the little dots at the bottom of each slide (which indicates how many slides there are in the carousel, 
                 and which slide the user is currently viewing).The indicators are specified in an ordered list with class .carousel-indicators.
                 The data-slide-to: attribute specifies which slide to go to, when clicking on the specific dot.
                 The .active class: needs to be added to one of the slides. Otherwise, the carousel will not be visible.
               -->
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#car.ouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <!--  Wrapper for slides 
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#car.ouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <!--  Wrapper for slides 
                 The "Wrapper for slides" part: The slides are specified in a <div> with class .carousel-inner.
           -->
-          <div class="carousel-inner" role="listbox">
-            <!--  Slide One - Set the background image for this slide in the line below 
+      <div class="carousel-inner" role="listbox">
+        <!--  Slide One - Set the background image for this slide in the line below 
                   The content of each slide is defined in a <div> with class .item. This can be text or images.
                   The .active class needs to be added to one of the slides. Otherwise, the carousel will not be visible.
             -->
-            <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('https://previews.123rf.com/images/paolo77/paolo771302/paolo77130200028/17758061-blank-sheet-of-light-ocean-blue-paper-useful-as-a-background.jpg')">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>“Writing the first 90 percent of a computer program takes 90 percent of the time. The remaining ten percent also takes 90 percent of the time and the final touches also take 90 percent of the time.” </h3>
-                <p> – N.J. Rubenking</p>
-              </div>
-            </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/tzO9bxL/abstract-light-effects-over-golden-brown-background_4ydgb-hwg__F0000.png')">
-              <!-- Add Captions to Slides:Add <div class="carousel-caption"> within each <div class="item"> to create a caption for each slide: -->
-              <div class="carousel-caption d-none d-md-block">
-                <h3>"One man’s crappy software is another man’s full time job."</h3>
-                <p> – Jessica Gaston</p>
-              </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url('https://cdn.pixabay.com/photo/2015/12/19/16/23/wood-1099960_960_720.jpg')">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>“Websites promote you 24/7: No employee will do that.”</h3>
-                <p>― Paul Cookson</p>
-              </div>
-            </div>
+        <div class="carousel-item active"
+          style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('https://previews.123rf.com/images/paolo77/paolo771302/paolo77130200028/17758061-blank-sheet-of-light-ocean-blue-paper-useful-as-a-background.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>“Writing the first 90 percent of a computer program takes 90 percent of the time. The remaining ten
+              percent also takes 90 percent of the time and the final touches also take 90 percent of the time.” </h3>
+            <p> – N.J. Rubenking</p>
           </div>
-          <!--  The "Left and right controls" part:
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item"
+          style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/tzO9bxL/abstract-light-effects-over-golden-brown-background_4ydgb-hwg__F0000.png')">
+          <!-- Add Captions to Slides:Add <div class="carousel-caption"> within each <div class="item"> to create a caption for each slide: -->
+          <div class="carousel-caption d-none d-md-block">
+            <h3>"One man’s crappy software is another man’s full time job."</h3>
+            <p> – Jessica Gaston</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item"
+          style="background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url('https://cdn.pixabay.com/photo/2015/12/19/16/23/wood-1099960_960_720.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>“Websites promote you 24/7: No employee will do that.”</h3>
+            <p>― Paul Cookson</p>
+          </div>
+        </div>
+      </div>
+      <!--  The "Left and right controls" part:
                 This code adds "left" and "right" buttons that allows the user to go back and forth between the slides manually.
                 The data-slide attribute accepts the keywords "prev" or "next", which alters the slide position relative to its current position. 
           -->
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <!-- End of heading -->
-      </header>
-      
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- End of heading -->
+  </header>
+
   <!-- Page Content -->
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Portfolio 
+    <h1 class="mt-4 mb-3">Portfolio
     </h1>
 
     <ol class="breadcrumb">
@@ -138,14 +145,16 @@
     <div class="row">
       <div class="col-md-3">
         <!-- target="_blank" to open the link in new tab -->
-        <a href="https://jkumari.github.io/Word-Guess-Game/"target="_blank"> 
+        <a href="https://jkumari.github.io/Word-Guess-Game/" target="_blank">
           <img class="img-fluid rounded mb-3 mb-md-0" src="assets/word-guess-game.JPG" alt="Guess Word Game Project">
           <span>Word-Guess-Game</span>
         </a>
       </div>
       <div class="col-md-9">
         <h3>Word-Guess-Game</h3>
-        <p>Word Guess Game is desigend using technologies featuring dynamically updated HTML and CSS backed by JavaScript. Inspired by children love for zoo animals, this game showcase guessing the zoo animal's name and hence learning more about them!</p>
+        <p>Word Guess Game is desigend using technologies featuring dynamically updated HTML and CSS backed by
+          JavaScript. Inspired by children love for zoo animals, this game showcase guessing the zoo animal's name and
+          hence learning more about them!</p>
         <a class="btn btn-primary" href="https://jkumari.github.io/Word-Guess-Game/" target="_blank">Game Homepage
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
@@ -160,44 +169,49 @@
 
     <!-- Project Two -->
     <div class="row">
-        <div class="col-md-3">
-          <a href="https://jkumari.github.io/CookBook/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="assets/cookbook.JPG" alt="Cookbook Project">
-            <span>CookBook!</span>
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>CookBook</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="https://jkumari.github.io/CookBook/" target="_blank">Project Homepage
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <a class="btn btn-primary" href="https://github.com/jkumari/CookBook" target="_blank">GitHub Repository
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
+      <div class="col-md-3">
+        <a href="https://jkumari.github.io/CookBook/" target="_blank">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="assets/cookbook.JPG" alt="Cookbook Project">
+          <span>CookBook!</span>
+        </a>
       </div>
+      <div class="col-md-9">
+        <h3>CookBook</h3>
+        <p>Cookbook website that allow user to search and add recipes to their cookbook. Ever tried a recipe that you
+          liked very much but can’t find it on the internet anymore when you want to make it again? You’ll never lose a
+          recipe again with CookBook!.For those who are health conscious, our website is using API to dynamically and
+          automatically analyse the ingredients information from the recipe and give you nutrition values for specific
+          recipies. Controlling your calories has never been easier!. The website allows you the search the recipies
+          without login. But once logged in you will be able to save your recipies and come back to make it again!</p>
+        <a class="btn btn-primary" href="https://jkumari.github.io/CookBook/" target="_blank">Project Homepage
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-primary" href="https://github.com/jkumari/CookBook" target="_blank">GitHub Repository
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
     <hr>
 
     <!-- Project Three -->
     <div class="row">
-        <div class="col-md-3">
-          <a href="https://jkumari.github.io/Start-Wars-RPG/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="assets/StarWarRPG.JPG" alt="Star War RPG Game">
-            <span>StarWar Game</span>
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>StarWar Game</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="https://jkumari.github.io/Start-Wars-RPG/" target="_blank">Game Homepage
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <a class="btn btn-primary" href="https://github.com/jkumari/Start-Wars-RPG" target="_blank">GitHub Repository
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
+      <div class="col-md-3">
+        <a href="https://jkumari.github.io/Start-Wars-RPG/" target="_blank">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="assets/StarWarRPG.JPG" alt="Star War RPG Game">
+          <span>StarWar Game</span>
+        </a>
       </div>
+      <div class="col-md-9">
+        <h3>StarWar Game</h3>
+        <p>Enjoy thrilling adventures in the Star Wars universe with</p>
+        <a class="btn btn-primary" href="https://jkumari.github.io/Start-Wars-RPG/" target="_blank">Game Homepage
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-primary" href="https://github.com/jkumari/Start-Wars-RPG" target="_blank">GitHub Repository
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
 
     <hr>
 
@@ -211,7 +225,7 @@
       </div>
       <div class="col-md-9">
         <h3>Mathmania Trivia Game</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+        <p></p>
         <a class="btn btn-primary" href="https://jkumari.github.io/TriviaGame/" target="_blank">Game Homepage
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
@@ -224,24 +238,24 @@
     <hr>
     <!-- Project Five -->
     <div class="row">
-        <div class="col-md-3">
-          <a href="https://jkumari.github.io/TriviaGame/" target="_blank">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="assets/GifTasticMagic.JPG" alt="GifTastic Magic">
-            <span>GifTastic Magic</span>
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>GifTasticMagic</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="https://jkumari.github.io/GifTasticMagic/" target="_blank">Game Homepage
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <a class="btn btn-primary" href="https://github.com/jkumari/GifTasticMagic" target="_blank">GitHub Repository
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
+      <div class="col-md-3">
+        <a href="https://jkumari.github.io/TriviaGame/" target="_blank">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="assets/GifTasticMagic.JPG" alt="GifTastic Magic">
+          <span>GifTastic Magic</span>
+        </a>
       </div>
-      <!-- /.row -->
+      <div class="col-md-9">
+        <h3>GifTasticMagic</h3>
+        <p></p>
+        <a class="btn btn-primary" href="https://jkumari.github.io/GifTasticMagic/" target="_blank">Game Homepage
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a class="btn btn-primary" href="https://github.com/jkumari/GifTasticMagic" target="_blank">GitHub Repository
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
 
   </div>
   <!-- /.container -->
