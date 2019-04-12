@@ -20,12 +20,42 @@ h3{
 
 .fab {
   font-family: "Font Awesome 5 Brands";
+
 }
 a:active, a:focus, a:hover {
   color: #824027;
 }
 
+#linkedinProfile  .text{
+  visibility:hidden;
+}
 
+#gitHubProfile .text{
+  visibility:hidden;
+}
+#fbProfile .text{
+  visibility: hidden;
+}
+#twitterProfile .text{
+  visibility: hidden;
+}
+#linkedinProfile:hover .text{
+  visibility:visible;
+  font-size: 12px;
+  }
+  
+#gitHubProfile:hover .text{
+    visibility:visible;
+    font-size: 12px;
+    }
+#fbProfile:hover .text{
+  visibility:visible;
+  font-size: 12px;
+}
+#twitterProfile:hover .text{
+  visibility:visible;
+  font-size: 12px;
+}
 .col-md-3{
 
     position: relative;
