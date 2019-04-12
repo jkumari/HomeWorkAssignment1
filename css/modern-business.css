@@ -62,8 +62,8 @@ a:active, a:focus, a:hover {
 }
 .col-md-3 span {
   position: absolute;
-  font-size: 20px;
-  background-color: burlywood;
+  font-size: 15px;
+  background-color: rgb(135, 222, 215);
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
